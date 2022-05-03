@@ -37,7 +37,7 @@ INSERT INTO `school_year` (`name`, `description`, `start_date`, `end_date`) VALU
 -- - tag : SASS (id inconnu)
 -- Note : c'est à vous de retrouver l'id du tag mais vous pouvez l'inscrire en dur dans la requête.
 SELECT `id` FROM `tag` WHERE name = 'SASS';
-INSERT INTO `student_tag` (`student_id`, `tag_id`) VALUES ('1', '12');
+INSERT INTO `student_tag` (`student_id`, `tag_id`) VALUES (1, 12);
 
 -- Exo 2.4
 -- Mettez à jour le tag `HTML` :
@@ -87,3 +87,4 @@ DELETE FROM `student` WHERE `id` = 99;
 SELECT `id` FROM `project` WHERE `name` = 'Ut delectus explicabo.';
 DELETE FROM `project_tag` WHERE `project_id` = 16;
 UPDATE `student` SET `project_id` = NULL WHERE `project_id` = 16;
+DELETE FROM `project` WHERE id = 16;

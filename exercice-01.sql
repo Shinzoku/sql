@@ -19,7 +19,7 @@ SELECT * FROM `student` WHERE `id` = 2;
 
 -- Exo 1.4
 -- Écrivez la requête qui permet de lister les students dont l'id n'est pas `2`
-SELECT * FROM `student` WHERE `id` IS NOT 2;
+SELECT * FROM `student` WHERE `id` != 2;
 
 -- Exo 1.5
 -- Écrivez la requête qui permet de lister le project dont l'id est `3`
@@ -27,7 +27,7 @@ SELECT * FROM `project` WHERE `id` = 3;
 
 -- Exo 1.6
 -- Écrivez la requête qui permet de lister les projects dont l'id n'est pas `3`
-SELECT * FROM `project` WHERE `id` IS NOT 3;
+SELECT * FROM `project` WHERE `id` != 3;
 
 -- Exo 1.7
 -- Écrivez la requête qui permet de lister les students dont l'email contient la chaîne de caractères `.com`
