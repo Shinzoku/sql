@@ -39,7 +39,7 @@ SELECT * FROM `student` WHERE `created_at` <= '2021-01-10';
 
 -- Exo 1.9
 -- Écrivez la requête qui permet de lister les projets dont la description contient pas la chaîne de caractères `Dolores`
-SELECT * FROM `project` WHERE `client_name` LIKE NOT '%Dolores%';
+SELECT * FROM `project` WHERE `client_name` NOT LIKE '%Dolores%';
 
 -- Exo 1.10
 -- Écrivez la requête qui permet de lister les projets dont la date de création est postérieure au 1er juillet 2021 inclus
